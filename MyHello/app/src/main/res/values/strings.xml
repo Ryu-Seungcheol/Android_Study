@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyHello</string>
+    <string name="Cancle_Button">취소</string>
+    <string name="submit">입력완료</string>
+</resources>

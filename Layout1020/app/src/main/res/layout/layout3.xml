@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/albumjacket" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="#A1C3C9"
+            android:fontFamily="@font/nanumsquare_b"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:text="Original Sound Track Part2"
+            android:textColor="#DFDEDE"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="140dp"
+        android:layout_weight="0.9"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rewind"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rewind"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:background="@drawable/play"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/preview"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/preview"
+            app:backgroundTint="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="430dp"
+        android:text="Artist"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="480dp"
+        android:text="Title"
+        android:textColor="@color/white" />
+
+</FrameLayout>

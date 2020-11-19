@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calculation</string>
+    <string name="plusButton">+</string>
+    <string name="minusButton">-</string>
+    <string name="multipleButton">x</string>
+    <string name="divideButton">/</string>
+</resources>

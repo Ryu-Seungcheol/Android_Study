@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.7"
+    tools:context=".QuizStep2">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level 02."
+        android:textColor="#2E5B30"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/quiz2_problem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
+
+    <TextView
+        android:id="@+id/quiz2_problem"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="갤럭시 OS 는 안드로이드이다."
+        android:textColor="#2E2B2B"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <Button
+        android:id="@+id/quiz2_ok"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/toggleok"
+        android:onClick="quiz2_onclick"
+        app:backgroundTint="@color/cardview_shadow_end_color"
+        app:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="@+id/quiz2_problem"
+        app:layout_constraintTop_toBottomOf="@+id/quiz2_problem"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <Button
+        android:id="@+id/quiz2_not"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/toggleno"
+        android:onClick="quiz2_onclick"
+        app:backgroundTint="@color/cardview_shadow_end_color"
+        app:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="@+id/quiz2_problem"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toEndOf="@+id/quiz2_ok"
+        app:layout_constraintTop_toTopOf="@+id/quiz2_ok" />
+
+    <Button
+        android:id="@+id/quiz2_home"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:background="@drawable/togglebackhome"
+        android:onClick="quiz2_onclick"
+        app:backgroundTint="@color/cardview_shadow_end_color"
+        app:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="@+id/quiz2_not"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/quiz2_next"
+        app:layout_constraintTop_toTopOf="@+id/quiz2_next" />
+
+    <Button
+        android:id="@+id/quiz2_next"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/togglenext"
+        android:onClick="quiz2_onclick"
+        app:backgroundTint="@color/cardview_shadow_end_color"
+        app:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/quiz2_ok"
+        app:layout_constraintTop_toBottomOf="@+id/quiz2_ok"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:alpha="0.6"
+        android:background="@drawable/startllevel1"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
