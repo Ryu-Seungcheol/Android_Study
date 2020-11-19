@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/statusView"
+        android:layout_width="323dp"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:text="신규회원은 회원가입을 해주세요."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <Button
+        android:id="@+id/buttonCan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="CANCLE"
+        android:textColor="#848383"
+        app:backgroundTint="#FFFFFF"
+        app:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSign"
+        app:layout_constraintStart_toStartOf="@+id/buttonSign"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSign" />
+
+    <Button
+        android:id="@+id/buttonSign"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="Sign"
+        android:textColor="#848383"
+        app:backgroundTint="#FFFFFF"
+        app:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

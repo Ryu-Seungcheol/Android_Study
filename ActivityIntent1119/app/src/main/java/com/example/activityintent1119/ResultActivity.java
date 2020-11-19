@@ -26,7 +26,7 @@ public class ResultActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 확인 버튼이 눌리면, input 에 입력된 정보를 가지고 되돌아간다.
-                Intent intent = new Intent();
+                Intent intent = new Intent();   // 매개변수가 없는 intent 생성.
                 // input 의 정보를 INPUT 이라는 키에 담아 보내겠다.
                 intent.putExtra("INPUT", input.getText().toString());
                 setResult(RESULT_OK, intent);   // 정보를 MainActivity 의 onActivityResult() 로 넘긴다.
