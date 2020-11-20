@@ -60,8 +60,8 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(this, "가입되었습니다.", Toast.LENGTH_SHORT).show();
 
             } else if (resultCode == RESULT_CANCELED) {
-                Toast.makeText(this, "취소되었습니다.", Toast.LENGTH_SHORT).show();
                 statusView.setText("다시 시도해주세요.");
+                Toast.makeText(this, "취소되었습니다.", Toast.LENGTH_SHORT).show();
             }
         }
     }
